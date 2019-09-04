@@ -1,0 +1,239 @@
+body {
+  background-color: #fff;
+  font-family: "IBM Plex Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  text-decoration: none;
+}
+.promo_container {
+  max-width: 900px;
+}
+.promo_header {
+  padding: 100px 0 125px 0px;
+  background-color: #ffffff;
+}
+.promo_header img.wordmark {
+  width: 240px;
+  margin-bottom: 70px;
+  margin-left: auto;
+  display: block;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.promo_header .promo_title {
+  font-size: 3em;
+  line-height: 60px;
+}
+.promo_goals {
+  background-color: #f8f8f9;
+  padding: 50px 0;
+}
+.promo_goals .card-header {
+  background-color: #f8f8f9;
+  border-bottom: 1px solid #e2e2e2;
+}
+.promo_goals .card-header .btn {
+  color: #000000;
+}
+.promo_goals .card-header .btn:hover {
+  color: #093aff;
+}
+.promo_goals .promo_goals_header {
+  color: #000;
+  padding: 30px 0;
+}
+.promo_goals [data-toggle="collapse"]:after {
+  background: rgba(0, 0, 0, 0.05);
+}
+.promo_goals .card-body {
+  background-color: #f8f8f9 !important;
+  color: rgba(0, 0, 0, 0.95) !important;
+}
+.promo_more {
+  background-color: #000;
+  color: white;
+  padding: 50px 0;
+}
+.promo_more .promo_more_header {
+  color: #ffffff;
+  padding: 30px 0;
+}
+[data-toggle="collapse"]:after {
+  background: #020d39;
+  padding: 0px 5px;
+  display: inline-block;
+  float: left;
+  margin-right: 7px;
+  border-radius: 100px;
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "arrow_downward";
+  transform: rotate(180deg);
+  transition: all linear;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+[data-toggle="collapse"].collapsed:after {
+  transform: rotate(0deg);
+}
+
+[data-toggle="collapse"]:hover:after {
+  background-color: transparent;
+}
+@media only screen and (max-width: 600px) {
+  .promo_header .promo_title {
+    font-size: 2em;
+    line-height: 40px;
+  }
+  .promo_header img.wordmark {
+    width: 230px;
+    margin-bottom: 70px;
+    margin-right: auto;
+    display: inline-block;
+  }
+  .promo_header {
+    padding: 80px 0;
+    background-color: #ffffff;
+  }
+  .promo_more {
+    padding: 30px 0;
+  }
+
+  .promo_more .promo_more_header {
+    color: #ffffff;
+    padding: 30px 0;
+    font-size: 1.7em;
+  }
+  .promo_goals .promo_goals_header {
+    padding: 30px 0;
+    font-size: 1.7em;
+  }
+}
+.rib_bleu {
+  background: #093aff;
+  height: 15px;
+  max-width: 130px;
+  display: block;
+  margin-left: auto;
+}
+
+/** override bs4 **/
+.card {
+  border: none;
+}
+.card-header {
+  padding: 12px 0;
+  margin-bottom: 0;
+  background-color: rgb(0, 0, 0);
+  border-bottom: 1px solid #292929;
+}
+.card-body {
+  line-height: 26px !important;
+  color: rgba(255, 255, 255, 0.97) !important;
+  font-size: 17px !important;
+  background-color: #000 !important;
+  padding: 15px 0 !important;
+  font-weight: 400 !important;
+}
+.card-header .btn {
+  padding: 0;
+  font-size: 19px;
+  color: #093aff;
+}
+
+.btn-link:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@keyframes fadeIn to {
+  opacity: 1;
+}
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+
+td a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: underline;
+}
+
+td a:hover {
+  color: white;
+  text-decoration: none;
+}
+.table thead th {
+  font-weight: 400;
+}
